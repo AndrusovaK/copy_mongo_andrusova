@@ -1,9 +1,227 @@
+/********
+
+Tablet
+
+*********/
+
+
 @media (min-width: 768px) {
+
+  .page-header, .page-footer {
+      min-height: 70px;
+  }
+
+  .logo {
+    font-size: 22px;
+    line-height: 70px;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-right: 12px;
+    line-height: 70px;
+  }
+
+  .main-nav li:last-child {
+    margin-right: 0;
+  }
+
+  .main-nav a {
+    padding: 10px 9px;
+    border: 1px solid transparent;
+    line-height: 32px;
+}
+
+  .main-nav a:hover {
+    border: 1px solid #ffffff;
+  }
+
+  #touch-menu img {
+    padding: 23px 0;
+  }
+
+
+  /**Promo**/
+
+  .promo-btn {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 118px;
+    height: 38px;
+    border: 1px solid  #fff;
+    line-height: 40px;
+    margin: 178px 0 64px;
+    z-index: 200;
+  }
+
+  .promo-btn:after {
+    content: "";
+    position: absolute;
+    background-image: url('../img/arrow-down.svg');
+    width: 18px;
+    height: 29px;
+    left: 43%;
+    bottom: -64px;
+  }
+
+
+  /*Преимущества*/
+  .advantages {
+    min-height: 235px;
+    padding: 70px 0;
+    position: relative;
+  }
+
+  .advantages::before {
+  content: '';
+  position: absolute;
+  background: url(../img/mask_top.png) top center no-repeat;
+  min-height: 180px;
+  top: -140px;
+  width: 100%;
+  background-size: cover;
+}
+
+.advantage-item p {
+  display: inline-block;
+  width: 135px;
+  vertical-align: middle;
+  font-weight: 700;
+}
 
   .video-container {
     display: block;
   }
 
+.carousel-wrap{
+  position: relative;
+}
+.carousel {
+  height: 405px;
+}
 
+.gallery .section-title {
+  display: block;
+}
+
+
+
+}
+
+
+
+/*******
+
+Large screensize
+
+********/
+
+
+
+
+@media (min-width: 1200px) {
+
+  .adaptive-nav-wrap {
+    display: none;
+  }
+
+  .main-nav-wrap {
+    display: block;
+  }
+
+
+/**Promo**/
+
+.promo {
+  min-height: 645px;
+  background: url('../img/bg_promo-block.jpg') no-repeat 50% 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 170px;
+}
+
+  .about-us:after {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .section-title, .section-title_left {
+    font-size: 32px;
+    line-height: 26px;
+    margin-bottom: 73px;
+    position: relative;
+  }
+
+  /*Галерея*/
+.gallery {
+  min-height: 450px;
+  padding: 100px 0 90px;
+}
+
+.carousel-wrap{
+  position: relative;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.carousel {
+  width: 1020px;
+  margin: 0 auto;
+  height: 260px;
+}
+
+.gallery_item {
+  margin-right: 20px;
+}
+
+.prev {
+  position: absolute;
+  background: url(../img/arrow-left.svg) no-repeat 0 0;
+  width: 35px;
+  height: 33px;
+  z-index: 200;
+  left: 0;
+  top: 45%;
+}
+
+.prev:hover {
+  background: url(../img/arrow-left_hover.svg) no-repeat 0 0;
+  width: 35px;
+  height: 33px;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  background: url(../img/arrow-right.svg) no-repeat 0 0;
+  width: 35px;
+  height: 33px;
+  z-index: 200;
+  right: 0;
+  top: 45%;
+}
+
+.next:hover {
+  background: url(../img/arrow-right_hover.svg) no-repeat 0 0;
+  width: 35px;
+  height: 33px;
+  cursor: pointer;
+}
+/*
+.gallery_item img {
+  height: auto;
+  width: 255px;
+  overflow: hidden;
+}*/
 
 }

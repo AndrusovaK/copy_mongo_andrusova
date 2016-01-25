@@ -64,3 +64,21 @@ $('ul.tabs li').click(function(){
     $(this).addClass('current');
     $("#"+tab_id).addClass('current');
   })
+
+
+//выпадающая менюшка
+    $(document).ready(function(){
+      var touch = $('#touch-menu');
+        var menu = $('.adaptive-nav');
+
+        $(touch).on('click', function(e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+        $(window).resize(function(){
+            var wid = $(window).width();
+            if(wid > 760 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+    });

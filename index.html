@@ -17,7 +17,26 @@
 	<header class="page-header" id="navigation">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs col-sm-8 col-lg-12">
+				<div class="col-xs adaptive-nav-wrap">
+
+						<p class="clearfix">
+							<a href="index.html" class="logo left">Монгольфьеркин и КО</a>
+							<a href="#" id="touch-menu" class="right"><img src="img/icon_menu.svg" height="24" width="25" alt=""></a>
+						</p>
+						<nav class="adaptive-nav">
+							<ul>
+								<li><a href="#who-we-are" class="active">Кто мы</a></li>
+								<li><a href="#photos">Фотографии</a></li>
+								<li><a href="#flight-plan">План полета</a></li>
+								<li><a href="#order">Заказать</a></li>
+								<li><a href="#our-team">Команда</a></li>
+								<li><a href="#contacts">Контакты</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="col-lg-12 main-nav-wrap">
 					<a href="index.html" class="logo left">Монгольфьеркин и КО</a>
 					<nav class="main-nav right">
 						<ul class="right">
@@ -56,19 +75,19 @@
 			<div class="container">
 				<div class="row">
 					<div class="advantage-item col-xs col-sm-4 col-lg-3">
-						<img src="img/icon_like.svg" alt="like" height="58">
+						<img src="img/icon_like.svg" alt="like">
 						<p>Современный надежный шар</p>
 					</div>
 					<div class="advantage-item col-xs col-sm-4 col-lg-3">
-						<img src="img/icon_glasses.svg" alt="glasses" height="58" width="75">
+						<img src="img/icon_glasses.svg" alt="glasses">
 						<p>Обучение пилотированию</p>
 					</div>
 					<div class="advantage-item col-xs col-sm-4 col-lg-3">
-						<img src="img/icon_photo.svg" alt="photo" height="58" width="65">
+						<img src="img/icon_photo.svg" alt="photo">
 						<p>Фотосъемка в полете</p>
 					</div>
 					<div class="advantage-item col-xs col-sm-4 col-lg-3">
-						<img src="img/icon_binoculars.svg" alt="binoculars" height="58" width="72">
+						<img src="img/icon_binoculars.svg" alt="binoculars">
 						<p>Потрясающие виды</p>
 					</div>
 				</div>
@@ -101,9 +120,16 @@
 				<div class="row">
 					<div class="col-xs">
 						<h3 class="section-title center">Галерея</h3>
-						<div class="slider">
+						<div class="carousel-wrap">
 							<div class="carousel">
-								<div class="gallery_item"><img src="img/gallery1.jpg" alt="slider1"></div>
+								<div class="gallery_item">
+									<picture>
+										<source
+												media="(min-width: 1200px)"
+												srcset="img/gallery1.jpg">
+										<img src="img/gallery-phone1.jpg" alt="">
+									</picture>
+								</div>
 								<div class="gallery_item"><img src="img/gallery2.jpg" alt="slider2"></div>
 								<div class="gallery_item"><img src="img/gallery3.jpg" alt="slider3"></div>
 								<div class="gallery_item"><img src="img/gallery4.jpg" alt="slider4"></div>
@@ -484,12 +510,19 @@
 	<script>
 		$(document).ready(function(){
   			$('.carousel').slick({
-    			autoplay: true,
 				autoplaySpeed: 500,
 				slidesToShow: 4,
 				slidesToScroll: 1,
 				prevArrow: $('.prev'),
 				nextArrow: $('.next'),
+				responsive: [
+    		{
+      		breakpoint: 1200,
+      			settings: {
+        			slidesToShow: 1
+      			}
+    			}
+  ]
   			});
 		});
 	</script>

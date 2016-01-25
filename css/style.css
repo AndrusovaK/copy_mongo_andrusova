@@ -223,8 +223,13 @@ input, a {
 
 
 /*Header*/
+
+.main-nav-wrap {
+	display: none;
+}
+
 .page-header, .page-footer {
-	min-height: 70px;
+	min-height: 50px;
 	background-color: #444;
 }
 
@@ -235,73 +240,68 @@ input, a {
 
 .logo {
 	font-weight: 500;
-	font-size: 22px;
-	line-height: 70px;
+	font-size: 18px;
+	line-height: 50px;
 }
 
-.main-nav li {
+.adaptive-nav li {
+		text-align: center;
+}
+
+.adaptive-nav a {
+	display: block;
+	padding: 12px 0;
+	box-sizing: border-box;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+
+.adaptive-nav a:hover {
+	border-top-color: #ffffff;
+	border-bottom-color: #ffffff;
+}
+
+#touch-menu {
 	display: inline-block;
-    margin-right: 12px;
-	line-height: 70px;
+	height: 50px;
+	vertical-align: middle;
+
 }
 
-.main-nav li:last-child {
-	margin-right: 0;
+#touch-menu img {
+	padding: 13px 0;
 }
 
-.main-nav a {
-	padding: 10px 9px;
-	border: 1px solid transparent;
-	line-height: 32px;
+.adaptive-nav {
+	display: none;
 }
 
-.main-nav a:hover {
-	border: 1px solid #ffffff;
-}
 
 
 /*Промо*/
 .promo {
-	min-height: 645px;
-	background: url('../img/bg_promo-block.jpg') no-repeat 50% 0;
+	min-height: 300px;
+	box-sizing: border-box;
+	background: url('../img/bg_promo-phone.jpg') no-repeat 50% 20%;
 	-webkit-background-size: cover;
 	background-size: cover;
-	padding-top: 170px;
+	padding-top: 50px;
 }
 
 .promo-title {
-	font-size: 66px;
+	font-size: 28px;
 	color: #fff;
 }
 
 .promo-btn {
-	position: relative;
-	text-decoration: none;
-	color: #fff;
-	display: inline-block;
-	width: 118px;
-	height: 38px;
-	border: 1px solid  #fff;
-	line-height: 40px;
-	margin: 178px 0 64px;
-	z-index: 200;
-}
-
-.promo-btn:after {
-	content: "";
-	position: absolute;
-	background-image: url('../img/arrow-down.svg');
-	width: 18px;
-	height: 29px;
-	left: 43%;
-	bottom: -64px;
+	display: none;
 }
 
 
 /*Преимущества*/
 .advantages {
 	min-height: 235px;
-	padding: 70px 0;
+	padding: 0;
 	position: relative;
 }
 
@@ -310,54 +310,46 @@ input, a {
 	position: absolute;
 	background: url(../img/mask_top.png) top center no-repeat;
 	min-height: 180px;
-	top: -140px;
+	top: -100px;
 	width: 100%;
 	background-size: cover;
 }
 
+.advantage-item {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
 .advantage-item p {
 	display: inline-block;
-	width: 135px;
+	width: 240px;
 	vertical-align: middle;
-	font-weight: 700;
+	text-align: left;
 }
 
 .advantage-item img {
 	display: inline-block;
 	margin-right: 20px;
 	vertical-align: middle;
+	height: 35px;
+	width: 40px;
 }
 
 
 /*О нас+видео*/
 .about-us {
-	min-height: 460px;
+	min-height: 440px;
+	padding: 50px 0;
+	box-sizing: border-box;
 	position: relative;
-}
-
-.about-us:after {
-	content: "";
-	display: block;
-	width: 1200px;
-	height: 1px;
-	background-color: #ccc;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-}
-
-.about-us .col4 {
-	padding-right: 30px;
 }
 
 .section-title, .section-title_left {
-	font-size: 32px;
-	line-height: 26px;
-	margin-bottom: 73px;
-	position: relative;
-}
+    font-size: 28px;
+    line-height: 26px;
+    margin-bottom: 45px;
+    position: relative;
+  }
 
 .section-title:after {
 	content: "";
@@ -395,53 +387,56 @@ input, a {
 
 /*Галерея*/
 .gallery {
-	min-height: 450px;
-	padding: 100px 0 90px;
+	min-height: 230px;
+	margin-bottom: 50px;
 }
 
-.slider {
-	position: relative;
-	width: 1140px;
-	margin: 0 auto;
+.gallery .section-title {
+	display: none;
+}
+
+.carousel-wrap {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
 }
 
 .carousel {
-	width: 1020px;
-	margin: 0 auto;
+	width: 100%;
+	height: 230px;
+	overflow: hidden;
+
+}
+
+.gallery_item img {
+	width: 100%;
+}
+
+.prev, .next {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	z-index: 200;
+	top: 40%;
 }
 
 .prev {
-	position: absolute;
-	background: url(../img/arrow-left.svg) no-repeat 0 0;
-	width: 35px;
-	height: 33px;
-	z-index: 200;
+	background: rgba(0,0,0,0.6) url(../img/arrow-left.svg) no-repeat 40% 50%;
+	background-size: 20px 20px;
 	left: 0;
-	top: 45%;
-}
-
-.prev:hover {
-	background: url(../img/arrow-left_hover.svg) no-repeat 0 0;
-	width: 35px;
-	height: 33px;
-	cursor: pointer;
 }
 
 .next {
-	position: absolute;
-	background: url(../img/arrow-right.svg) no-repeat 0 0;
-	width: 35px;
-	height: 33px;
-	z-index: 200;
+	background: rgba(0,0,0,0.6) url(../img/arrow-right.svg) no-repeat 50% 50%;
+	background-size: 20px 20px;
 	right: 0;
-	top: 45%;
 }
 
-.next:hover {
-	background: url(../img/arrow-right_hover.svg) no-repeat 0 0;
-	width: 35px;
-	height: 33px;
+.prev:hover, .next:hover {
 	cursor: pointer;
+	background-color: rgba(0,0,0,0.4);
 }
 
 
@@ -939,3 +934,6 @@ li.current {
 	bottom: 20px;
 	right: 10px;
 }
+
+
+
