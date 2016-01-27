@@ -36,7 +36,7 @@
 }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 640px) and (max-width: 767px){
   .gallery {
   min-height: 400px;
 }
@@ -232,6 +232,11 @@ Tablet
   padding: 0;
   margin: 0;
   left: 0;
+}
+
+.timer div {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .count-title {
@@ -504,8 +509,6 @@ label {
   right: 25px;
   bottom: 20px;
 }
-
-
 
 }
 
