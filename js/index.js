@@ -82,3 +82,40 @@ $('ul.tabs li').click(function(){
             }
         });
     });
+
+//Gallery slider
+$(document).ready(function(){
+        $('.carousel').slick({
+        autoplaySpeed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        responsive: [
+        {
+          breakpoint: 1200,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+  ]
+        });
+    });
+
+
+      $(document).ready(function(){
+        $('.reviews-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: $('.prev-review'),
+        nextArrow: $('.next-review'),
+        responsive: [
+        {
+          breakpoint: 1200,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+  ]
+        });
+    });

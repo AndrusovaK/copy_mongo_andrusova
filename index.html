@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/desctop.css">
+	<link rel="stylesheet" href="css/large.css">
 	<link rel="stylesheet" href="slick/slick.css">
 </head>
 <body>
@@ -130,11 +131,46 @@
 										<img src="img/gallery-phone1.jpg" alt="">
 									</picture>
 								</div>
-								<div class="gallery_item"><img src="img/gallery2.jpg" alt="slider2"></div>
-								<div class="gallery_item"><img src="img/gallery3.jpg" alt="slider3"></div>
-								<div class="gallery_item"><img src="img/gallery4.jpg" alt="slider4"></div>
-								<div class="gallery_item"><img src="img/gallery1.jpg" alt="slider1"></div>
-								<div class="gallery_item"><img src="img/gallery2.jpg" alt="slider2"></div>
+								<div class="gallery_item">
+									<picture>
+										<source
+												media="(min-width: 1200px)"
+												srcset="img/gallery2.jpg">
+											<img src="img/gallery-phone2.jpg" alt="slider2">
+									</picture>
+								</div>
+								<div class="gallery_item">
+									<picture>
+										<source
+												media="(min-width: 1200px)"
+												srcset="img/gallery3.jpg">
+											<img src="img/gallery-phone3.jpg" alt="slider3">
+									</picture>
+								</div>
+								<div class="gallery_item">
+									<picture>
+										<source
+												media="(min-width: 1200px)"
+												srcset="img/gallery4.jpg">
+											<img src="img/gallery-phone4.jpg" alt="slider4">
+									</picture>
+								</div>
+								<div class="gallery_item">
+									<picture>
+										<source
+												media="(min-width: 1200px)"
+												srcset="img/gallery2.jpg">
+											<img src="img/gallery-phone2.jpg" alt="slider2">
+									</picture>
+								</div>
+								<div class="gallery_item">
+									<picture>
+										<source
+												media="(min-width: 1200px)"
+												srcset="img/gallery3.jpg">
+											<img src="img/gallery-phone3.jpg" alt="slider3">
+									</picture>
+								</div>
 							</div>
 							<div class="carousel-nav">
 								<div class="prev"></div>
@@ -158,86 +194,77 @@
 
 						<div class="row flight-stages">
 							<div class="col-xs">
-								<div class="flight-stage-item flight-stage-item1 center">
-									<p class="flight-stage-text">Взлет</p>
-									<span class="flight-stage-number">1</span>
+								<div class="flight-stage-item flight-stage-item1">
+									<p class="flight-stage-text flight-stage-text-1">Взлет</p>
 								</div>
 							</div>
 
 							<div class="col-xs">
-								<div class="flight-stage-item flight-stage-item2 center">
-									<p class="flight-stage-text">Набираем высоту</p>
-									<span class="flight-stage-number">2</span>
+								<div class="flight-stage-item flight-stage-item2">
+									<p class="flight-stage-text flight-stage-text-2">Набираем высоту</p>
 								</div>
 							</div>
 
 							<div class="col-xs">
-								<div class="flight-stage-item flight-stage-item3 center">
-									<p class="flight-stage-text">Летаем</p>
-									<span class="flight-stage-number">3</span>
+								<div class="flight-stage-item flight-stage-item3">
+									<p class="flight-stage-text flight-stage-text-3">Летаем</p>
 								</div>
 							</div>
 
 							<div class="col-xs">
-								<div class="flight-stage-item flight-stage-item4 center">
-									<p class="flight-stage-text">Снижаемся</p>
-									<span class="flight-stage-number">4</span>
+								<div class="flight-stage-item flight-stage-item4">
+									<p class="flight-stage-text flight-stage-text-4">Снижаемся</p>
 								</div>
 							</div>
 
 							<div class="col-xs">
-								<div class="flight-stage-item flight-stage-item5 center">
-									<p class="flight-stage-text">Садимся</p>
-									<span class="flight-stage-number">5</span>
+								<div class="flight-stage-item flight-stage-item5">
+									<p class="flight-stage-text flight-stage-text-5">Садимся</p>
 								</div>
 							</div>
 						</div>
 
+						<div class="row timer">
+							<div class="col-xs col-sm-3 col-lg-5">
+								<p class="count-title">До ближайшего полета:</p>
+							</div>
+							<div class="count-time col-xs col-sm-5 col-lg-7">
+								<div class="time-wrap">
+									<div class="days">0</div>
+									<div class="measure measure-days">дня</div>
+								</div>
+								<div class="time-wrap">
+									<div class="hours">0</div>
+									<div class="measure measure-hours">часов</div>
+								</div>
+								<div class="time-wrap">
+									<div class="minutes center">0</div>
+									<div class="measure measure-minutes center">минут</div>
+								</div>
+								<div class="time-wrap">
+									<div class="seconds">0</div>
+									<div class="measure measure-seconds">секунд</div>
+								</div>
+							</div>
+						</div>
 
 			</div>
 		</section>
 <!--Как проходят полеты-->
 
-		<div class="timer">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs col-sm-3 col-lg-5">
-						<p class="count-title">До ближайшего полета:</p>
-					</div>
-					<div class="count-time col-xs col-sm-5 col-lg-7">
-						<div class="time-wrap">
-							<div class="days">0</div>
-							<div class="measure measure-days">дня</div>
-						</div>
-						<div class="time-wrap">
-							<div class="hours">0</div>
-							<div class="measure measure-hours">часов</div>
-						</div>
-						<div class="time-wrap">
-							<div class="minutes">0</div>
-							<div class="measure measure-minutes">минут</div>
-						</div>
-						<div class="time-wrap">
-							<div class="seconds">0</div>
-							<div class="measure measure-seconds">секунд</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<!--Рассчитать стоимость-->
 		<section class="cost" id="order">
 			<div class="container">
 				<div class="row">
-					<div class="cost-info col-xs col-lg-6">
+					<div class="cost-info col-xs col-sm-8 col-lg-6">
 						<h3 class="section-title section-title_left">Рассчитать стоимость</h3>
 						<p class="cost-text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
 						<p class="cost-text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p>
 						<p class="cost-text">Выбирайте, куда мы полетим сегодня!</p>
 					</div>
 
-					<div class="cost-form col-xs col-lg-6">
+					<div class="cost-form col-xs col-sm-6 col-sm-offset-1 col-lg-6 .col-lg-offset-0">
 						<form action="" method="post">
 							<p class="form-field clearfix">
 								<label for="route-field" class="">Маршрут полета:</label>
@@ -269,7 +296,7 @@
 								<input type="text" name="phone" id="phone-field">
 							</p>
 							<div class="cost-form-cost">
-								<p class="final-cost">Стоимость: <span>9000 P</span></p>
+								<p class="final-cost"><span>Стоимость:</span> 9000 P</p>
 								<button type="submit" class="cost-form-btn right">Полетели!</button>
 							</div>
 						</form>
@@ -306,9 +333,7 @@
 								<p>Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
 							</div>
 							<div id="tab-3" class="tab-content credit-card">
-								<p>Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
-								<p>— по телефону: +7 (812) 640-19-39,<br>— или по почте:<br>mnebyvnebo@gmail.com</p>
-								<p>Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
+								<p>В ближайшее время мы добавим возможность оплаты с помощью кредитной карты VISA и MasterCard. Пока просим вас использовать наличные деньги для оплаты услуг.</p>
 							</div>
 						</div>
 					</div>
@@ -348,19 +373,19 @@
 		<section class="statistic">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs col-sm-2 col-lg-3 center">
+					<div class="statistic-item col-xs col-sm-2 col-lg-3">
 						<span class="number-circle">700</span>
 						<p class="statistic-text">Полетов в год</p>
 					</div>
-					<div class="col-xs col-sm-2 col-lg-3 center">
+					<div class="statistic-item col-xs col-sm-2 col-lg-3">
 						<span class="number-circle">3000</span>
 						<p class="statistic-text">Средняя<br>дальность в метрах</p>
 					</div>
-					<div class="col-xs col-sm-2 col-lg-3 center">
+					<div class="statistic-item col-xs col-sm-2 col-lg-3">
 						<span class="number-circle">3</span>
 						<p class="statistic-text">Воздушных<br>шара</p>
 					</div>
-					<div class="col-xs col-sm-2 col-lg-3 center">
+					<div class="statistic-item col-xs col-sm-2 col-lg-3">
 						<span class="number-circle">12</span>
 						<p class="statistic-text">Человек<br>в команде</p>
 					</div>
@@ -378,37 +403,45 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="team-member col-xs col-sm-3 col-sm-offset-1 col-lg-3 col-lg-offset-0 center">
+					<div class="team-member col-xs col-sm-3 col-sm-offset-1 col-lg-3 col-lg-offset-0">
 						<div class="member-avatar marieva">
 							<img src="img/team_marieva.png" alt="">
 							<img src="img/team_hover.png" height="160" width="160" alt="" class="member-avatar-hover">
 						</div>
-						<p class="member-name">Мария Мариева</p>
-						<p class="member-job">Старший пилот</p>
+						<div class="member-info">
+							<p class="member-name">Мария Мариева</p>
+							<p class="member-job">Старший пилот</p>
+						</div>
 					</div>
-					<div class="team-member col-xs col-sm-3 col-lg-3 center">
+					<div class="team-member col-xs col-sm-3 col-lg-3 ">
 						<div class="member-avatar nadezdova">
 							<img src="img/team_nadezdova.png" alt="">
 							<img src="img/team_hover.png" height="160" width="160" alt="" class="member-avatar-hover">
 						</div>
-						<p class="member-name">Надежда Надеждова</p>
-						<p class="member-job">Второй пилот</p>
+						<div class="member-info">
+							<p class="member-name">Надежда Надеждова</p>
+							<p class="member-job">Второй пилот</p>
+						</div>
 					</div>
-					<div class="team-member col-xs col-sm-3 col-sm-offset-1 col-lg-offset-0 col-lg-3 center">
+					<div class="team-member col-xs col-sm-3 col-sm-offset-1 col-lg-offset-0 col-lg-3">
 						<div class="member-avatar irinova">
 							<img src="img/team_irinova.png" alt="">
 							<img src="img/team_hover.png" height="160" width="160" alt="" class="member-avatar-hover">
 						</div>
-						<p class="member-name">Ирина Иринова</p>
-						<p class="member-job">Авиадиспетчер</p>
+						<div class="member-info">
+							<p class="member-name">Ирина Иринова</p>
+							<p class="member-job">Авиадиспетчер</p>
+						</div>
 					</div>
-					<div class="team-member col-xs col-sm-3  col-lg-3 center">
+					<div class="team-member col-xs col-sm-3  col-lg-3">
 						<div class="member-avatar alenova">
 							<img src="img/team_alenova.png" alt="">
 							<img src="img/team_hover.png" height="160" width="160" alt="" class="member-avatar-hover">
 						</div>
-						<p class="member-name">Алена Аленова</p>
-						<p class="member-job">Авиатехник</p>
+						<div class="member-info">
+							<p class="member-name">Алена Аленова</p>
+							<p class="member-job">Авиатехник</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -424,20 +457,37 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="review-item col-xs col-lg-6 center">
-						<img src="img/review_alekseeva.png" alt="" width="98" height="98">
-						<blockquote>
-							<cite>Ольга Алексеева</cite>
-							<p>Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
-						</blockquote>
-					</div>
-					<div class="review-item col-xs col-lg-6 center">
-						<img src="img/review_ribkin.png" alt="" width="98" height="98">
-						<blockquote>
-							<cite>Артем Рыбкин</cite>
-							<p>Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Cпасибо вам, нам все понравилось.</p>
-						</blockquote>
-					</div>
+					<div class="col-xs col-sm-6 col-sm-offset-1">
+						<div class="review-slider-wrap">
+							<div class="reviews-slider">
+								<div class="review-item center">
+									<img src="img/review_alekseeva.png" alt="" width="98" height="98">
+									<blockquote>
+										<cite>Ольга Алексеева</cite>
+										<p>Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
+									</blockquote>
+								</div>
+								<div class="review-item center">
+									<img src="img/review_ribkin.png" alt="" width="98" height="98">
+									<blockquote>
+										<cite>Артем Рыбкин</cite>
+										<p>Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Cпасибо вам, нам все понравилось.</p>
+									</blockquote>
+								</div>
+								<div class="review-item center">
+									<img src="img/review_alekseeva.png" alt="" width="98" height="98">
+									<blockquote>
+										<cite>Ольга Алексеева</cite>
+										<p>Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
+									</blockquote>
+								</div>
+							</div>
+							<div class="review-slider-nav">
+									<div class="prev-review"></div>
+									<div class="next-review"></div>
+								</div>
+												</div>
+						</div>
 				</div>
 			</div>
 		</section>
@@ -468,7 +518,7 @@
 					</div>
 					<div class="internet col-xs col-sm-8 col-lg-4">
 						<a href="" class="email">mnebyvnebo@gmail.com</a>
-						<p>
+						<p class="socials">
 							<a class="social" href="">&#230;</a>
 							<a class="social" href="">&#228;</a>
 							<a class="social" href="">&#235;</a>
@@ -507,25 +557,6 @@
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
-	<script>
-		$(document).ready(function(){
-  			$('.carousel').slick({
-				autoplaySpeed: 500,
-				slidesToShow: 4,
-				slidesToScroll: 1,
-				prevArrow: $('.prev'),
-				nextArrow: $('.next'),
-				responsive: [
-    		{
-      		breakpoint: 1200,
-      			settings: {
-        			slidesToShow: 1
-      			}
-    			}
-  ]
-  			});
-		});
-	</script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/timer.js"></script>
 

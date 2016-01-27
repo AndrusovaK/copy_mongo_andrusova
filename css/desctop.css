@@ -1,3 +1,66 @@
+@media (min-width: 385px) {
+  .gallery {
+  min-height: 280px;
+}
+
+  .carousel {
+  height: 280px;
+}
+
+.gallery_item img {
+  max-height: 280px;
+}
+}
+
+@media (min-width: 480px) {
+  .advantage-item p {
+    width: 260px;
+  }
+
+  .statistic-item, .team-member {
+    padding: 0 19%;
+  }
+}
+
+@media (min-width: 515px) {
+  .gallery {
+  min-height: 350px;
+}
+
+  .carousel {
+  height: 350px;
+}
+
+.gallery_item img {
+  max-height: 350px;
+}
+}
+
+@media (min-width: 640px) {
+  .gallery {
+  min-height: 400px;
+}
+
+.carousel-wrap {
+  width: 92%;
+  left: 4%;
+  right: 4%;
+}
+
+  .carousel {
+  height: 400px;
+}
+
+.gallery_item img {
+  max-height: 400px;
+}
+
+  .statistic-item, .team-member {
+    padding: 0 25%;
+  }
+}
+
+
 /********
 
 Tablet
@@ -6,6 +69,10 @@ Tablet
 
 
 @media (min-width: 768px) {
+
+  .section-title, .section-title_left {
+    margin-bottom: 53px;
+  }
 
   .page-header, .page-footer {
       min-height: 70px;
@@ -16,32 +83,20 @@ Tablet
     line-height: 70px;
   }
 
-  .main-nav li {
-    display: inline-block;
-    margin-right: 12px;
-    line-height: 70px;
-  }
-
-  .main-nav li:last-child {
-    margin-right: 0;
-  }
-
-  .main-nav a {
-    padding: 10px 9px;
-    border: 1px solid transparent;
-    line-height: 32px;
-}
-
-  .main-nav a:hover {
-    border: 1px solid #ffffff;
-  }
-
   #touch-menu img {
     padding: 23px 0;
   }
 
-
   /**Promo**/
+
+  .promo {
+    min-height: 640px;
+    padding-top: 180px;
+  }
+
+  .promo-title {
+    font-size: 44px;
+  }
 
   .promo-btn {
     position: relative;
@@ -52,8 +107,8 @@ Tablet
     height: 38px;
     border: 1px solid  #fff;
     line-height: 40px;
-    margin: 178px 0 64px;
-    z-index: 200;
+    margin: 160px 0 64px;
+    z-index: 2;
   }
 
   .promo-btn:after {
@@ -68,32 +123,35 @@ Tablet
 
 
   /*Преимущества*/
+
   .advantages {
-    min-height: 235px;
-    padding: 70px 0;
-    position: relative;
+    min-height: 100px;
   }
 
   .advantages::before {
-  content: '';
-  position: absolute;
-  background: url(../img/mask_top.png) top center no-repeat;
-  min-height: 180px;
-  top: -140px;
-  width: 100%;
-  background-size: cover;
+  top: -120px;
+}
+
+.advantage-item {
+  text-align: left;
 }
 
 .advantage-item p {
-  display: inline-block;
-  width: 135px;
-  vertical-align: middle;
+  width: auto;
   font-weight: 700;
 }
+
+/*About us*/
 
   .video-container {
     display: block;
   }
+
+/*Galery slider*/
+
+.gallery {
+  padding-top: 35px;
+}
 
 .carousel-wrap{
   position: relative;
@@ -106,122 +164,349 @@ Tablet
   display: block;
 }
 
-
-
-}
-
-
-
-/*******
-
-Large screensize
-
-********/
-
-
-
-
-@media (min-width: 1200px) {
-
-  .adaptive-nav-wrap {
-    display: none;
-  }
-
-  .main-nav-wrap {
-    display: block;
-  }
-
-
-/**Promo**/
-
-.promo {
-  min-height: 645px;
-  background: url('../img/bg_promo-block.jpg') no-repeat 50% 0;
-  -webkit-background-size: cover;
-  background-size: cover;
-  padding-top: 170px;
-}
-
-  .about-us:after {
-    content: "";
-    display: block;
-    width: 1200px;
-    height: 1px;
-    background-color: #ccc;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-
-  .section-title, .section-title_left {
-    font-size: 32px;
-    line-height: 26px;
-    margin-bottom: 73px;
-    position: relative;
-  }
-
-  /*Галерея*/
-.gallery {
-  min-height: 450px;
-  padding: 100px 0 90px;
-}
-
-.carousel-wrap{
-  position: relative;
-  width: 1140px;
-  margin: 0 auto;
-}
-
-.carousel {
-  width: 1020px;
-  margin: 0 auto;
-  height: 260px;
-}
-
-.gallery_item {
-  margin-right: 20px;
-}
-
-.prev {
-  position: absolute;
-  background: url(../img/arrow-left.svg) no-repeat 0 0;
-  width: 35px;
-  height: 33px;
-  z-index: 200;
-  left: 0;
-  top: 45%;
-}
-
-.prev:hover {
-  background: url(../img/arrow-left_hover.svg) no-repeat 0 0;
-  width: 35px;
-  height: 33px;
-  cursor: pointer;
-}
-
-.next {
-  position: absolute;
-  background: url(../img/arrow-right.svg) no-repeat 0 0;
-  width: 35px;
-  height: 33px;
-  z-index: 200;
-  right: 0;
-  top: 45%;
-}
-
-.next:hover {
-  background: url(../img/arrow-right_hover.svg) no-repeat 0 0;
-  width: 35px;
-  height: 33px;
-  cursor: pointer;
-}
-/*
 .gallery_item img {
-  height: auto;
-  width: 255px;
-  overflow: hidden;
+  min-height: 405px;
+}
+
+
+/*Как проходят полеты*/
+
+.process {
+  min-height: 550px;
+  background: url('../img/fly-line.png') no-repeat 50% 200px,
+        url('../img/bg_mountains.jpg') no-repeat 50% 100%;
+  -webkit-background-size: auto, auto 365px;
+  background-size: contain, auto 365px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.flight-stages {
+  height: 260px;
+  padding-top: 35px;
+  position: relative;
+
+}
+
+.flight-stage-item {
+  position: absolute;
+  width: 100px;
+  text-align: center;
+}
+
+.flight-stage-item1 {
+  bottom: -130px;
+  left: 0;
+}
+
+.flight-stage-item2 {
+  bottom: -100px;
+  left: 20%;
+}
+
+.flight-stage-item3 {
+  left: 43%;
+}
+
+.flight-stage-item4 {
+  right: 20%;
+  bottom: -100px;
+}
+
+.flight-stage-item5 {
+  bottom: -130px;
+  right: 0;
+}
+
+.flight-stage-text:before {
+  position: absolute;
+  bottom: -70px;
+  left: 30%;
+}
+
+/*Обратный отсчет*/
+.timer {
+  min-height: 75px;
+  line-height: 75px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  left: 0;
+}
+
+.count-title {
+  margin-bottom: 0;
+}
+
+.count-time {
+  text-align: right;
+  padding-right: 25px;
+}
+
+.count-time div {
+  display: inline-block;
+}
+
+.time-wrap:nth-of-type(3) {
+  width: 100px;
+}
+
+.time-wrap:last-of-type {
+  margin-right: 0;
+  width: 110px;
+}
+
+
+/**/
+.cost {
+  padding-bottom: 25px;
+  background: url(../img/bg_cost-form.jpg) no-repeat 50% 320px;
+  background-size: cover;
+}
+
+.cost-info {
+  margin-bottom: 40px;
+}
+
+.cost-text {
+  display: block;
+  padding-bottom: 25px;
+}
+
+.cost-form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 26px;
+}
+
+.form-field {
+  display: block;
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.cost-form select, .cost-form input {
+  width: 300px;
+  display: inline-block;
+}
+
+.cost-form-cost {
+  padding-top: 17px;
+}
+
+.final-cost {
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.final-cost span {
+  display: inline-block;
+  font-size: 18px;
+  color: #444444;
+  font-weight: 700;
+  margin-right: 15px;
+  line-height: 40px;
+  vertical-align: top;
+}
+
+
+/**/
+.details {
+  padding-top: 55px;
+}
+
+.payment-type {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  padding:0 15px;
+  border-bottom: none;
+}
+
+.payment-type:last-child {
+  margin-right: 0;
+}
+
+.faq {
+  display: block;
+  padding-top: 20px;
+}
+
+.accordeon__item{
+  margin-bottom: 18px;
+}
+
+.question-title {
+  display: inline-block;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  vertical-align: middle;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  border-bottom: 1px dashed #666;
+  cursor: pointer;
+}
+
+.question-active {
+  border-bottom: none;
+}
+
+/*.question-title:before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icon_ask.svg);
+  width: 40px;
+  height: 34px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 17px;
 }*/
 
+.question-answer {
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 60px;
+  font-style: italic;
 }
+
+
+
+/*Статистика*/
+.statistic {
+  min-height: 290px;
+  padding: 48px 0 59px;
+}
+
+.statistic-item, .team-member {
+  padding: 0 13px;
+}
+
+.statistic-item {
+  text-align: center;
+}
+
+.number-circle {
+  display: inline-block;
+  font-size: 32px;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  margin-bottom: 25px;
+}
+
+.statistic-text {
+  font-size: 18px;
+}
+
+.statistic-item:first-of-type .statistic-text {
+  padding: 0 50px;
+}
+
+
+/*Команда инструкторов*/
+
+.team-member {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.member-avatar {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.member-avatar img {
+  width: 160px;
+  height: 160px;
+}
+
+.member-avatar-hover {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+   transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+
+.member-avatar:hover .member-avatar-hover {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+  cursor: pointer;
+}
+
+.member-name {
+  font-size: 22px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.member-job {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*Отзывы*/
+.reviews {
+
+}
+
+.prev-review, .next-review {
+  width: 25px;
+  height: 43px;
+  top: 50%;
+}
+
+.prev-review {
+  left: -75px;
+}
+
+.next-review {
+  right: -75px;
+}
+
+
+/*Contacts*/
+
+.airport-title {
+  font-size: 26px;
+}
+
+.airport-adress {
+  font-size: 18px;
+}
+
+.contacts .office {
+  padding-left: 55px;
+}
+
+.office:before {
+  left: 0;
+}
+
+.socials {
+  float: right;
+}
+
+.arrow-up {
+  right: 25px;
+  bottom: 20px;
+}
+
+
+
+}
+
+
