@@ -86,7 +86,8 @@ $('ul.tabs li').click(function(){
 //Gallery slider
 $(document).ready(function(){
         $('.carousel').slick({
-        autoplaySpeed: 500,
+        autoplay: true,
+        autoplaySpeed: 2000,
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: $('.prev'),
