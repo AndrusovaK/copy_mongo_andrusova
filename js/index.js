@@ -1,3 +1,13 @@
+//Плавный скролл
+
+$(function (){
+  $('a[href^="#"]').on('click',function(e){
+    var targetPosition = $(this.hash).offset().top;
+    $('body,html').animate({'scrollTop':targetPosition},500); // анимируем прокрутку
+  });
+});
+
+
 //Аккордеон
 
   function AccordeonItem(e) {
@@ -86,8 +96,8 @@ $('ul.tabs li').click(function(){
 //Gallery slider
 $(document).ready(function(){
         $('.carousel').slick({
-          autoplay:true,
-        autoplaySpeed: 500,
+        autoplay:true,
+        autoplaySpeed: 2000,
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: $('.prev'),
