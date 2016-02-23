@@ -1,13 +1,3 @@
-//Плавный скролл
-
-$(function (){
-  $('a[href^="#"]').on('click',function(e){
-    var targetPosition = $(this.hash).offset().top;
-    $('body,html').animate({'scrollTop':targetPosition},500); // анимируем прокрутку
-  });
-});
-
-
 //Аккордеон
 
   function AccordeonItem(e) {
@@ -130,3 +120,12 @@ $(document).ready(function(){
   ]
         });
     });
+
+      //Плавный скролл
+
+$(document).ready(function(){
+  $('a[href^="#"]').on('click',function(e){
+    var targetPosition = $(this.hash).offset().top;
+    $('body,html').animate({'scrollTop':targetPosition},500); // анимируем прокрутку
+  });
+});
